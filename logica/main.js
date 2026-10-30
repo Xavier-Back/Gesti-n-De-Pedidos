@@ -11,3 +11,13 @@ function mostrarPedido(titulo){
     }
 
 }
+
+
+function imprimirRecibo(mesa){
+    const { subtotal, servicio, total} = calcularTotal(mesas, mesa)
+
+    console.log(`\n--- RECIBO - MESA ${mesa} ---`)
+    for (const p of mesas[mesa]){
+        console.log(`${p.platillo}: ${p.cantidad} x ${pesos(p.precio)} = ${pesos(p.cantidad * p.precio)}`)
+    }
+}
