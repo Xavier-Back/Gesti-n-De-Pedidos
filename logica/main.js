@@ -26,3 +26,8 @@ function imprimirRecibo(mesa){
     console.log(`Servicio (10%):  ${pesos(servicio)}`)
     console.log(`TOTAL A COBRAR:  ${pesos(total)}`)
 }
+
+mostrarPedido('ESTADO INICIAL')
+
+agregarPlatillo(mesas, 1, "Papas fritas", 1, 8000);
+agregarPlatillo(mesas, 1, "Coca-Cola", 3, 12000);
