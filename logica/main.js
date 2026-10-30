@@ -20,4 +20,9 @@ function imprimirRecibo(mesa){
     for (const p of mesas[mesa]){
         console.log(`${p.platillo}: ${p.cantidad} x ${pesos(p.precio)} = ${pesos(p.cantidad * p.precio)}`)
     }
+
+    console.log('--- RECIBO DE LA PROPINA ---')
+    console.log(`subtotal:  ${pesos(subtotal)}`)
+    console.log(`Servicio (10%):  ${pesos(servicio)}`)
+    console.log(`TOTAL A COBRAR:  ${pesos(total)}`)
 }
